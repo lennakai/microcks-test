@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package some.namespace.v1;
+
+import "google/protobuf/empty.proto";
+import "custom.proto";
+
+service TestService
+{
+    rpc TestRpc(CustomRequest)         returns (google.protobuf.Empty) {}
+}
+
