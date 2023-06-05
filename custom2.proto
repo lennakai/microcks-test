@@ -2,8 +2,25 @@ syntax = "proto3";
 
 package some.namespace.v1;
 
+enum JobStatusType
+{
+    UNKNOWN           = 0;
+    NEW               = 1;
+    MODIFIED          = 2;
+    AVAILABLE         = 3;
+    IMPORTED_LOCALLY  = 4;
+    IMPORTED_REMOTELY = 5;
+    UNFEASABLE        = 6;
+    IN_PREPARATION    = 7;
+    IN_PROCESS        = 8;
+    FINISHED          = 9;
+    INTERRUPTED       = 10;
+    ABORTED           = 11;
+    DELETED           = 12;
+}
+
 message CustomRequest2
 {
     string data = 1;
-    int32 number = 2;
+    JobStatusType jobStatus = 2;
 }
