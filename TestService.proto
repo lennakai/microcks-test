@@ -4,9 +4,13 @@ package some.namespace.v1;
 
 import "google/protobuf/empty.proto";
 import "custom.proto";
+import "custom1.proto";
+import "custom2.proto";
 
 service TestService
 {
     rpc TestRpc(CustomRequest)         returns (google.protobuf.Empty) {}
+    rpc TestRpc1(CustomRequest1)         returns (google.protobuf.Empty) {}
+    rpc TestRpc2(CustomRequest2)         returns (google.protobuf.Empty) {}
 }
 
