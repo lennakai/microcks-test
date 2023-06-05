@@ -5,5 +5,5 @@ package some.namespace.v1;
 message CustomRequest
 {
     string data = 1;
-    int number = 2;
+    int32 number = 2;
 }
