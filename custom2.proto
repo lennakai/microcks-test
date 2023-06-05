@@ -24,3 +24,8 @@ message CustomRequest2
     string data = 1;
     JobStatusType jobStatus = 2;
 }
+
+message CustomRequest2List
+{
+    repeated CustomRequest2 customRequest = 1;
+}
