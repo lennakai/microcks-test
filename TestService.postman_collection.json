@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "7f7cfe25-a6b5-4ef8-9f48-fe2dba808d56",
-		"name": "test",
+		"name": "TestService",
 		"description": "StartFragment\n\nversion=v1 - This is a comment\n\nEndFragment",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "25291855"
