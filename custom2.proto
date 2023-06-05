@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package some.namespace.v1;
+
+message CustomRequest2
+{
+    string data = 1;
+    int32 number = 2;
+}
