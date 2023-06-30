@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package some.namespace.v1;
 
+/* import "not_there.proto"; */
+
 enum JobStatusType
 {
     UNKNOWN           = 0;
@@ -23,6 +25,7 @@ message CustomRequest2
 {
     string data = 1;
     JobStatusType jobStatus = 2;
+    /* other.namespace.not_here here = 3*/
 }
 
 message CustomRequest2List
