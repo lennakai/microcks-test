@@ -5,18 +5,18 @@ package some.namespace.v1;
 enum JobStatusType
 {
     UNKNOWN           = 0;
-    NEW               = 1;
-    MODIFIED          = 2;
-    AVAILABLE         = 3;
-    IMPORTED_LOCALLY  = 4;
-    IMPORTED_REMOTELY = 5;
-    UNFEASABLE        = 6;
-    IN_PREPARATION    = 7;
-    IN_PROCESS        = 8;
-    FINISHED          = 9;
-    INTERRUPTED       = 10;
-    ABORTED           = 11;
-    DELETED           = 12;
+    NEW               = 10;
+    MODIFIED          = 20;
+    AVAILABLE         = 30;
+    IMPORTED_LOCALLY  = 40;
+    IMPORTED_REMOTELY = 50;
+    UNFEASABLE        = 60;
+    IN_PREPARATION    = 70;
+    IN_PROCESS        = 80;
+    FINISHED          = 90;
+    INTERRUPTED       = 100;
+    ABORTED           = 110;
+    DELETED           = 120;
 }
 
 message CustomRequest2
