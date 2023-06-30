@@ -13,6 +13,7 @@ service TestService
     rpc TestRpc1(CustomRequest1)       returns (google.protobuf.Empty) {}
     rpc TestRpc2(CustomRequest2)       returns (google.protobuf.Empty) {}
     rpc TestRpc3(TestMessage)          returns (google.protobuf.Empty) {}
+    rpc TestRpc3(CustomRequest2List)   returns (google.protobuf.Empty) {}
 }
 
 message TestMessage
