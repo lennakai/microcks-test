@@ -10,7 +10,12 @@ import "custom2.proto";
 service TestService
 {
     rpc TestRpc(CustomRequest)         returns (google.protobuf.Empty) {}
-    rpc TestRpc1(CustomRequest1)         returns (google.protobuf.Empty) {}
-    rpc TestRpc2(CustomRequest2)         returns (google.protobuf.Empty) {}
+    rpc TestRpc1(CustomRequest1)       returns (google.protobuf.Empty) {}
+    rpc TestRpc2(CustomRequest2)       returns (google.protobuf.Empty) {}
+    rpc TestRpc3(TestMessage)          returns (google.protobuf.Empty) {}
 }
 
+message TestMessage
+{
+    some.namespace.v1.JobStatusType status = 1;
+}
